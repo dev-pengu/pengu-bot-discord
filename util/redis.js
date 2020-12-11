@@ -1,5 +1,5 @@
 const redis = require('redis')
-const { redisPath, redisKeyPrefix } = require('./config.json')
+const { redisPath, redisKeyPrefix } = require('@root/config.json')
 
 module.exports = async () => {
     return await new Promise((resolve, reject) => {

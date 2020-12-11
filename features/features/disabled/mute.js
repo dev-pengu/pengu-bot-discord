@@ -1,8 +1,10 @@
-const redis = require('./redis')
-const command = require('./command')
-const { redisKeyPrefix } = require('./config.json')
+const redis = require('@util/redis')
+const command = require('@util/command')
+const { redisKeyPrefix } = require('@root/config.json')
+const { prefix: globalPrefix } = require('@root/config.json')
+const commandBase = require('@root/commands/command-base')
 
-module.exports = client => {
+module.exports = (client) => {
     const getRole = (guild) => {
         return guild.roles.cache.find(role => role.name === 'Muted')
     }

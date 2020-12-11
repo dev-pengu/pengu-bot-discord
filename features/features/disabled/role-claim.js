@@ -1,4 +1,4 @@
-const firstMessage = require('./first-message')
+const firstMessage = require('@util/first-message')
 
 module.exports = client => {
     const channelId = '786471597279936534'
