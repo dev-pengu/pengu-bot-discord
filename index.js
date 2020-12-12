@@ -29,10 +29,12 @@ client.on('ready', async () => {
 
     client.registry
         .registerGroups([
-            ['misc', 'Misc commands'],
-            ['moderation', 'Moderation commands'],
-            ['economy', 'Commands for economy system'],
-            ['giveaway', 'Commands for giveaways']
+            ['misc', 'Misc Commands'],
+            ['moderation', 'Moderation Commands'],
+            ['economy', 'Commands for Economy System'],
+            ['giveaway', 'Commands for Giveaways'],
+            ['music', 'Music System Commands'],
+            ['games', 'Game Related Commands']
         ])
         .registerDefaults()
         .registerCommandsIn(path.join(__dirname, 'cmds'))
