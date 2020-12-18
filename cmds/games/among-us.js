@@ -43,7 +43,7 @@ module.exports = class AmongUsCommand extends Commando.Command {
         const channelName = `${CATEGORY} - ${code}`;
         const newChannel = await guild.channels.create(channelName, {
             type: 'voice',
-            userLimit: 10,
+            userLimit: 11,
             parent: categoryId
         })
         console.log(newChannel);
